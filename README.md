@@ -28,7 +28,7 @@ Key steps in the approach include:
 ### Data Preprocessing:
 * Loading and organizing the dataset.
 * Augmenting the data to increase model robustness.
-* 
+
 ### Model Training:
 * Building and training a deep learning model.
 * Experimenting with different architectures and hyperparameters.
