@@ -46,7 +46,6 @@ Key steps in the approach include:
 
 1) `split_data.py` - used to split the dataset into train, validation and test set.
 2) `notebook.ipynb` - notebook that covers:
-
   * Data loading, preparation and exploration,
   * Building dataloaders,
   * Building transfer-learning model for image classification with keras,
