@@ -27,20 +27,19 @@ Key steps in the approach include:
 
 ## Data Preprocessing:
 
-Loading and organizing the dataset.
-Augmenting the data to increase model robustness.
-Model Training:
+* Loading and organizing the dataset.
+* Augmenting the data to increase model robustness.
+* Model Training:
+1) Building and training a deep learning model.
+2) Experimenting with different architectures and hyperparameters.
+3) Model Evaluation:
 
-Building and training a deep learning model.
-Experimenting with different architectures and hyperparameters.
-Model Evaluation:
+* Assessing the model's performance on a separate test set.
+* Analyzing metrics such as accuracy, precision, recall, and F1 score.
+* Deployment (Future Consideration):
 
-Assessing the model's performance on a separate test set.
-Analyzing metrics such as accuracy, precision, recall, and F1 score.
-Deployment (Future Consideration):
-
-Preparing the model for deployment in real-world scenarios.
-Exploring options for integration into agricultural systems.
+* Preparing the model for deployment in real-world scenarios.
+* Exploring options for integration into agricultural systems.
 
 
 ## Description of the repository
