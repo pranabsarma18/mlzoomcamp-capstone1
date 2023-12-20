@@ -35,7 +35,7 @@ Key steps in the approach include:
 
 ### Model Evaluation:
 * Assessing the model's performance on a separate test set.
-* Analyzing metrics such as accuracy, precision, recall, and F1 score.
+* Analyzing metrics such as accuracy, precision, recall, and F1 score (though in this project we have only used accuracy as a metrics).
 
 ### Deployment (Future Consideration):
 * Preparing the model for deployment in real-world scenarios.
