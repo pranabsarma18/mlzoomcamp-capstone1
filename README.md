@@ -59,7 +59,7 @@ Key steps in the approach include:
 6) `test.py` - python script to test application.
 
 
-## How to run the project
+## How to run the project locally
 
 * copy (clone) this repository to your local PC to some directory,
 * change path to that directory with command line:
