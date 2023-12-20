@@ -75,3 +75,9 @@ docker build -t maize-model .
 docker run -it --rm -p 8080:8080 maize-model:latest
 ```
 * run the `test.py` script with the image url you want. The test file already contain an image url to test.
+
+
+## How to run the project from cloud
+The project is hosted on 🤗 Hugging Face. Simply go to the following link and make your prediction using the demo images or any maize leaf images that you want to classify
+
+https://huggingface.co/spaces/pranabsarma18/maize-disease-classification
