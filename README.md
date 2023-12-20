@@ -8,6 +8,7 @@ The dataset comprises a total of 4188 images, distributed across the following c
 * Gray Leaf Spot: 574 images
 * Blight: 1146 images
 * Healthy: 1162 images
+
 The images have been pre-labeled with their respective disease classes to facilitate supervised learning.
 
 ## Problem Statement:
