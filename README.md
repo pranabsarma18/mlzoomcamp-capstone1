@@ -5,6 +5,7 @@ This project aims to develop a deep learning model for the classification of cor
 
 ## Dataset:
 <a href="https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset"> Dataset link </a> 
+
 The dataset comprises a total of 4188 images, distributed across the following classes:
 
 * Common Rust: 1306 images
@@ -42,44 +43,26 @@ Preparing the model for deployment in real-world scenarios.
 Exploring options for integration into agricultural systems.
 
 
+## Description of the repository
 
-
-
-
-<center><h2 align="center">3. How the solution will be used</h2></center>
-Given url of user's image, application returns dictionary with class probabilities. Online shop bot chooses the most confident predictions to suggest for user the name of the tomato cultivar needed. User makes an order to purchase seeds of this tomato cultivar.
-
-<center><h2 align="center">4. Description of the repository</h2></center>
-
-1) `notebook.ipynb` - notebook that covers:
+1) `split_data.py` - used to split the dataset into train, validation and test set.
+2) `notebook.ipynb` - notebook that covers:
 
   * Data loading, preparation and exploration,
   * Building dataloaders,
   * Building transfer-learning model for image classification with keras,
   * Setting parameters for model,
   * Model training,
-  * Monitoring results of the model,
-  * Converting tensorflow model to TFLite format.
+  * Monitoring results of the model
 
-2) `train.py` - python script to train the model, convert to tflite format and save it.
+3) `lambda-function.py` -  python script with function to run application from within the AWS Labmda console.
+4) `Dockerfile` - specifies the commands that builds docker image with application.
+5) `maize-model.tflite` - tf.keras model converted into TFLite format.
+6) `test.py` - python script to test application.
 
-3) `test.py` - python script to test application.
 
-4) `lambda-function.py` -  python script with function to run application from within the AWS Labmda console.
+## How to run the project
 
-5) `Dockerfile` - specifies the commands that builds docker image with application.
-
-6) `model.tflite` - tf.keras model converted into TFLite format.
-
-7) `tomatoes.zip` - archived dataset.
-
-8) `readme.md`.
-
-<center><h2 align="center">5. How to run the project</h2></center>
-
-This project supposed to be deployed on AWS Lambda, but this did not happen :(
-
-The validity of the project can be checked in the following way:
 * copy (clone) this repository to your local PC to some directory,
 * change path to that directory with command line:
 ```
@@ -87,12 +70,10 @@ cd <your-directory-name>
 ```
 * build the docker image:
 ```
-docker build -t tomato-model .
+docker build -t maize-model .
 ```
 * run the docker image with command:
 ```
-docker run -it --rm -p 8080:8080 tomato-model:latest
+docker run -it --rm -p 8080:8080 maize-model:latest
 ```
-* run the `test.py` script with the image url you want. 
-*(check the local IP and paste it instead 'localhost' if you are on Windows)*
-* unzip dataset to subfolder `/tomatoes`, if you want to run `train.py` script, or use `!unzip tomatoes.zip` command in the Jupyter notebook
+* run the `test.py` script with the image url you want. The test file already contain an image url to test.
