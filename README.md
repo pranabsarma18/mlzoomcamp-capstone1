@@ -1,4 +1,4 @@
-<center><h1 align="center">MLZoomcamp 2023 Capstone Project.</h1></center>
+<center><h1 align="center">MLZoomcamp 2023 Capstone Project</h1></center>
 
 ## Project Overview:
 This project aims to develop a deep learning model for the classification of corn (maize) plant leaf diseases. The dataset consists of images categorized into four classes: Common Rust, Gray Leaf Spot, Blight, and Healthy. The goal is to train a robust classification model that can accurately identify the specific disease affecting a corn plant based on images of its leaves.
